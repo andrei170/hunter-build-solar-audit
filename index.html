@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website, SEO &amp; Lead Audit &middot; Hunter Build &amp; Solar &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+.agnav{position:sticky;top:0;z-index:60;background:rgba(13,17,23,.93);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.agnav .inner::-webkit-scrollbar{display:none}
+.agnav a{flex:0 0 auto;padding:13px 12px;font-size:13.5px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap}
+.agnav a:hover{color:var(--ink)}
+.agnav a.on{color:var(--accent);border-bottom-color:var(--accent)}
+.agnav a.ext{opacity:.8}
+@media(max-width:640px){.agnav .inner{padding:0 14px}.agnav a{padding:12px 10px;font-size:13px}}
+</style></head><body><nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./" class="on">Audit</a><a href="competitors.html">Competitors</a><a href="https://andrei170.github.io/hunter-build-solar-demo/" class="ext" target="_blank" rel="noopener">Concept Site &#8599;</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Website, SEO &amp; Lead Audit &middot; Hunter Build &amp; Solar Ltd &middot; Bury St Edmunds, Suffolk</div>
+    <div class="sub">Prepared for Jason Hunter &middot; 23 September 2026 &middot; AG1 Consulting</div>
+    <h1>Twenty Enquiries A Week. Three Or Four Jobs. And No Way On Earth To Tell Which Twenty They Were.</h1>
+
+    <div class="hero">
+      <div class="gradecard gc-F">
+        <div class="bigletter bl-F" style="font-size:44px">26</div>
+        <div class="score100">service pages built &mdash; and zero tracking on any of them</div>
+      </div>
+      <div class="heroread">
+        <h2>You are paying a lead platform and an SEO guy, and nothing on your site can tell them apart.</h2>
+        <p>You have <b>26 town-and-service pages</b>, which is more structure than most solar firms in the East of
+        England. Somebody has done real work here.</p>
+        <p><b>There is not one analytics tag, tag manager, advertising tag or call-tracking number on any of them.</b></p>
+        <div class="tag">Site and sitemaps read 23 September 2026</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">First &mdash; Your SEO Is Not The Problem, And We Want To Say So Plainly</div>
+    <div class="win">
+      <div class="lab">What has actually been built here is good</div>
+      <div class="code">
+Your 26 service pages, by town:
+
+  <span class="ok">Bury St Edmunds</span>   solar &middot; commercial &middot; domestic &middot; battery &middot; EV &middot; maintenance
+  <span class="ok">Ipswich</span>           solar &middot; commercial &middot; domestic &middot; battery &middot; EV &middot; maintenance
+  <span class="ok">Colchester</span>        solar &middot; commercial &middot; battery &middot; EV &middot; servicing &middot; repairs
+  <span class="ok">Norwich</span>           solar &middot; commercial &middot; domestic
+  <span class="ok">Thetford</span>          solar &middot; commercial
+  <span class="ok">Diss</span>              solar &middot; battery &middot; EV
+  <span class="ok">Stowmarket</span>        solar
+      </div>
+      <p><b>That is a proper town-by-service matrix</b> &mdash; the structure we would have recommended building, already
+      built. Your homepage runs to 4,157 words. Your contact page has two forms and three tappable numbers.</p>
+      <p><b>We are not going to walk into your call and tell you to do SEO.</b> Somebody is already doing it, and the
+      architecture is sound. The question is a different one, and it is below.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; Nobody Can Prove Any Of It Works</div>
+    <div class="code">
+Tracking installed on hunterbuildandsolar.co.uk:
+
+  Google Analytics 4         <span class="ph">not found</span>
+  Google Tag Manager         <span class="ph">not found</span>
+  Google Ads tag             <span class="ph">not found</span>
+  Meta pixel                 <span class="ph">not found</span>
+  Call tracking              <span class="ph">not found</span>
+  Microsoft Clarity          <span class="ph">not found</span>
+
+  Nothing. On any page.
+    </div>
+    <div class="flag">
+      <div class="lab">This is the single most expensive gap in your business right now</div>
+      <p>You told Ramses you get <b>around twenty enquiries a week</b>, mostly through a lead-generation platform, and
+      that you also have somebody working on your SEO.</p>
+      <p><b>So here is a question nobody can currently answer:</b> of those twenty, how many came from the platform you
+      pay for, and how many came from the 26 pages you also pay for?</p>
+      <p><b>Without analytics, the platform gets the credit for everything</b> &mdash; including the enquiries your own
+      website earned. That is a very comfortable position for a lead platform and a very expensive one for you.</p>
+      <p><b>And your SEO guy is working blind too.</b> He has built 26 pages and cannot tell you which three produce
+      work and which twenty produce nothing. He deserves the data as much as you do.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; Twenty Enquiries, Three Or Four Jobs</div>
+    <div class="code">
+  Enquiries per week           <span class="ok">~20</span>
+  Jobs per week                <span class="ok">3&ndash;4</span>
+  Roughly                      <span class="ph">15&ndash;20% convert</span>
+
+  You told us you prefer LARGER jobs.
+  You publish <span class="ok">7 commercial solar pages</span>.
+    </div>
+    <div class="warn">
+      <div class="lab">A lead platform cannot tell a big job from a small one</div>
+      <p><b>You are not short of enquiries. You are short of the right enquiries.</b> Sixteen or seventeen conversations
+      a week are ending in nothing, and each one still costs you the time to answer the phone, quote it and follow it up.</p>
+      <p>A platform like the one you are using sells the same enquiry to several installers and optimises for volume,
+      because volume is what it is paid for. <b>It has no idea you would rather have one commercial roof than four
+      domestic ones.</b></p>
+      <p><b>Your own website can be told that.</b> Your seven commercial pages are the highest-value thing you publish,
+      and you have no way of knowing whether a single enquiry has ever come from one of them.</p>
+      <p><b>Get the meter on, and within a month the question stops being &ldquo;how do I get more leads&rdquo; and
+      becomes &ldquo;how do I get more of the fourteen that came from the commercial pages.&rdquo;</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; We Checked Your MCS. It Is Real, And It Is Costing You Enquiries.</div>
+    <div class="win">
+      <div class="lab">Verified on the register, not taken from your website</div>
+      <div class="code">
+MCS certified installer register:
+
+  Listed name       <span class="ok">Hunter Build &amp; Solar Limited</span>
+  Certificate       <span class="ok">NAP-74463</span>        body: NAPIT
+  Location          <span class="ok">Bury St Edmunds, IP32 6HU</span>
+  Certified for     <span class="ok">Solar PV</span>  &middot;  <span class="ok">Battery storage</span>
+      </div>
+      <p><b>Your MCS is current and verifiable.</b> On a grant-backed or scheme-backed job that is the thing that lets
+      the customer proceed at all.</p>
+    </div>
+    <div class="flag">
+      <div class="lab">But your register entry has no website on it</div>
+      <div class="code">
+  Your website field on the register:   <span class="ph">EMPTY</span>
+
+  Solar MCS installers within ~45 miles of you:     <span class="ok">113</span>
+  How many put a website on their entry:            <span class="ok">69</span>   (61%)
+  How many did not:                                 <span class="ph">44 &mdash; including you</span>
+      </div>
+      <p><b>MCS runs its own find-an-installer search, and it is exactly what a homeowner researching a grant is told to
+      use.</b> Sixty-nine of your local competitors put a clickable link on theirs. You are findable there and then
+      there is nowhere to go.</p>
+      <p><b>This is free. It is one email to NAPIT.</b></p>
+      <p><b>And the number does not match either.</b> The register lists <b>01284 765263</b>. Your website publishes
+      only the mobile <b>07944 939438</b>. Someone who finds you through MCS rings a different number from everyone who
+      finds you through Google &mdash; which is another enquiry source nobody is counting.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; Two Smaller Things Worth Fixing</div>
+    <div class="code">
+  Structured data found:   <span class="ok">Article</span> &middot; <span class="ok">Person</span> &middot; <span class="ok">Organization</span> &middot; <span class="ok">WebPage</span> &middot; <span class="ok">WebSite</span>
+  Structured data missing: <span class="ph">LocalBusiness</span>   <span class="ph">Service</span>   <span class="ph">FAQPage</span>
+
+  Blog posts published:    <span class="ok">4</span>
+  Last touched:            <span class="ph">22 February 2026</span>  (seven months ago)
+    </div>
+    <div class="warn">
+      <div class="lab">Neither is urgent, both are cheap</div>
+      <p><b>No LocalBusiness markup.</b> Two of the three nearest competitors we checked have it. It is the code that
+      tells Google you are a real business at a real address serving a real area, and it is a one-off job.</p>
+      <p><b>The blog stopped in February.</b> Four posts, all last touched on the same day. That is not a crisis &mdash;
+      your service pages are doing the heavy lifting &mdash; but it means the site has looked dormant to Google for
+      seven months while 26 pages sat there waiting.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Scorecard</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Conversion tracking</div><div class="sc">No tags of any kind on any page</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Attribution</div><div class="sc">Cannot separate platform leads from website leads</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Call tracking</div><div class="sc">None &mdash; and two different numbers in circulation</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">MCS register listing</div><div class="sc">No website link; 61% of local rivals have one</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Lead quality</div><div class="sc">~20 enquiries producing 3&ndash;4 jobs</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Structured data</div><div class="sc">No LocalBusiness or Service markup</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Content freshness</div><div class="sc">4 posts, none since February</div></div><div class="badge gC">C</div></div>
+      <div class="row"><div><div class="rname">Enquiry routes</div><div class="sc">Two forms and three tappable numbers</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">MCS certification</div><div class="sc">Verified current &mdash; solar PV and battery</div></div><div class="badge gA">A</div></div>
+      <div class="row"><div><div class="rname">Site architecture</div><div class="sc">26 town-and-service pages, properly structured</div></div><div class="badge gA">A</div></div>
+    </div>
+    <div class="tag" style="margin-top:12px">The bottom two rows are the point. The certification and the pages are already right. Everything failing above them is measurement.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Would Do, In Order</div>
+    <ul class="road">
+      <li><b>Install GA4, conversion tracking and call tracking.</b> Before anything else and before any more pages.
+      Within four weeks you would know what proportion of your twenty weekly enquiries the platform actually earns.</li>
+      <li><b>Put a number against the platform.</b> Once you can see it, you can decide whether it is worth what you pay
+      &mdash; and that is a decision you currently cannot make in either direction.</li>
+      <li><b>Add your website to your MCS register entry</b>, and decide which phone number is the business number.
+      Free, same week.</li>
+      <li><b>Add LocalBusiness and Service structured data</b> across the 26 pages that already exist.</li>
+      <li><b>Point the commercial pages harder</b> &mdash; you prefer larger jobs and you already have seven commercial
+      pages. With tracking on, they can be measured, improved and, if they work, multiplied.</li>
+      <li><b>Only then talk about more traffic.</b> You do not have a traffic problem yet, and nobody can prove you do
+      until step one is done.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Three or four jobs a week, from twenty conversations, and room for more of both.</h2>
+    <p>You do not need more enquiries before you can tell which of the twenty are worth having.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 23 September 2026<br><br>
+    For Jason Hunter, Hunter Build &amp; Solar Ltd, Bury St Edmunds, Suffolk. <b>Every statement about the website
+    &mdash; the 26 service pages and their URL slugs, the page, post and policy counts, the homepage and contact page
+    word counts, the form and tappable-telephone counts, the Article, Person, Organization, WebPage and WebSite
+    structured data and the absence of LocalBusiness, Service and FAQPage markup, the four blog posts and their
+    last-modified date of 22 February 2026, and the absence of any analytics, tag manager, advertising tag, pixel or
+    call-tracking code &mdash; was read directly from hunterbuildandsolar.co.uk's own served pages and published
+    sitemaps on 23 September 2026 and is reproducible.</b> <b>Items recorded as "not found" describe what a static read
+    of the served HTML returned on that date and must not be read as proof of absence; tags may load after render or on
+    pages we did not read, and this should be confirmed with whoever manages your site before being relied on.</b>
+    <b>A sitemap's last-modified date records when a page was last changed, not necessarily when it was published.</b>
+    <b>The MCS certification, certificate number NAP-74463, certification body NAPIT, listed name, registered telephone
+    number 01284 765263, Bury St Edmunds location, certified technology scope of solar PV and battery storage, and the
+    empty website field were read from the MCS certified-installer register. The counts of 113 solar-certified
+    installers within approximately 45 miles and 69 of them carrying a website were derived from that same register
+    data by straight-line distance from your registered postcode &mdash; straight-line distance is not drive time and
+    the radius is approximate.</b> <b>A register reflects what was recorded when it was read; scope, contact details
+    and status can change and should be confirmed with MCS or NAPIT.</b> <b>The approximate figures of twenty enquiries
+    a week, three to four jobs a week, the preference for larger jobs and the use of a lead-generation platform are as
+    reported to AG1 and have not been independently verified; the resulting conversion percentage is simple arithmetic
+    on those reported figures, offered for discussion, not a measured rate.</b> <b>We have not identified, named,
+    contacted or assessed any lead-generation platform, and nothing here is a statement about any such platform's
+    pricing, practices, contract terms or the quality of any enquiry it supplies.</b> <b>No Google Business Profile,
+    review count, map position, search ranking, keyword or traffic figure has been measured for this or any business.</b>
+    <b>⚠ No number of enquiries, calls, leads, booked jobs, rankings or revenue outcomes is promised, forecast or
+    guaranteed anywhere in this document, and nothing here should be read as such.</b> Nothing here is a comment on the
+    competence, licensing, insurance or workmanship of this or any other business, nor on the work of any other
+    supplier, and nothing here is legal, financial or business advice. Company and scheme names are used for
+    identification only and belong to their respective owners. The grades are AG1's own editorial assessment.
+  </div>
+</footer>
+</body></html>
