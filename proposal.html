@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What We Propose &middot; Hunter Build &amp; Solar &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+.agnav{position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Audit</a><a href="competitors.html">Competitors</a><a href="proposal.html" class="on">What We Propose</a><a href="https://andrei170.github.io/hunter-build-solar-demo/">Concept Site</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">What We Propose &middot; Hunter Build &amp; Solar Ltd &middot; Bury St Edmunds</div>
+    <div class="sub">Prepared for Jason Hunter &middot; 30 September 2026 &middot; following our call of 23 September &middot; AG1 Consulting</div>
+    <h1>Eighty Leads Produced Four Jobs. The Ads Are Not The Problem.</h1>
+
+    <div class="hero">
+      <div class="heroread">
+        <h2>You said it yourself: ten pounds a lead is no good if they do not answer the phone.</h2>
+        <p><b>Eighty leads in six weeks. Sixteen answered. Four went ahead.</b> That is a 20% contact rate and a 5%
+        conversion. Your first campaign was better and you could not say why.</p>
+        <p><b>We would not touch the ads.</b> The filming is good, the spend is modest, and you turned over roughly
+        &pound;800,000 through those leads since February. What is broken sits between the click and the phone call.</p>
+        <div class="tag">No pricing until you have read this &bull; Nothing paid up front &bull; Your ad team stays</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">Before Anything Else &mdash; What Happened With TNW Will Not Happen Here</div>
+    <div class="code">
+  WHAT YOU TOLD US
+
+  <span class="ph">GBP12,000 paid up front, two years ago</span>
+  <span class="ph">"A full in-house system. Once you've paid it, you'll never
+   pay for a lead again."</span>
+  <span class="ph">They moved to Dubai. You never heard from them.</span>
+  <span class="ph">You still have the contract. You never got the money back.</span>
+  <span class="ph">Their setters rang you again recently.</span>
+
+  HOW WE WORK
+
+  <span class="ok">No large payment up front. Nothing like twelve thousand.</span>
+  <span class="ok">We are not selling you a system to run yourself.</span>
+  <span class="ok">We are in the UK, and you can find us.</span>
+  <span class="ok">Month to month. Stop it whenever you like.</span>
+    </div>
+    <div class="flag">
+      <div class="lab">Said first, because it should be</div>
+      <p><b>You have already paid twelve thousand pounds to someone who promised a system and vanished.</b> Anyone
+      selling you marketing has to answer that before they say anything else, and most will skip past it.</p>
+      <p><b>The part of their pitch that should have been the warning was &ldquo;you will never pay for a lead
+      again.&rdquo;</b> Nobody can promise that. We are not going to, and you should be suspicious of anyone who
+      does &mdash; including us, if we ever start.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 1 &mdash; The Numbers Say Friction, Not Traffic</div>
+    <div class="code">
+  YOUR LAST SIX WEEKS
+
+  Leads generated                  80
+  Answered the phone               <span class="ph">16   (20%)</span>
+  Went ahead                       <span class="ph">4    (5%)</span>
+  Cost per lead, as reported       GBP10
+  <span class="ph">Cost per JOB                     GBP200 in media -- but 76 chases</span>
+
+  WHAT THAT SAME SPEND LOOKED LIKE BEFORE
+  Average cost per lead            <span class="ok">GBP35</span>
+  Your words: <span class="ok">"we were just snowballed with people that
+  wanted to go ahead"</span>
+
+  <span class="ph">The lead got four times cheaper and four times worse.</span>
+    </div>
+    <div class="flag">
+      <div class="lab">This is the whole diagnosis in one line</div>
+      <p><b>A cheaper lead is not a better lead, and your own history proves it.</b> When you were paying
+      &pound;35 the campaign was snowballing. At &pound;10 you are getting people who filled a form in on a night
+      shift because they were bored &mdash; your example, not ours.</p>
+      <p><b>The pixel is learning from whoever converts.</b> If the cheapest, least serious enquiry is what it sees
+      as a conversion, it goes and finds more of exactly that person, week after week. That is why campaign two is
+      worse than campaign one, and why new creative alone will not fix it.</p>
+      <p><b>And six of last week's enquiries were other installers checking your prices.</b> Your form asks enough
+      to make that worth their while, and nothing on it tells them not to bother.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 2 &mdash; Nothing Is Measured, So Nobody Can Prove Anything</div>
+    <div class="code">
+  WHAT WE LOOKED FOR ON YOUR SITE       RESULT
+  Google Analytics / GA4                <span class="ph">not found</span>
+  Conversion tracking                   <span class="ph">not found</span>
+  Call tracking                         <span class="ph">not found</span>
+  Local business structured data        <span class="ph">not found</span>
+  Service markup                        <span class="ph">not found</span>
+  Website listed on MCS register        <span class="ph">link not working</span>
+
+  <span class="ok">Meta pixel</span>                            installed, but not
+                                        configured properly -- and it
+                                        only holds 180 days of data
+    </div>
+    <div class="warn">
+      <div class="lab">You are paying two suppliers and neither can show you a job</div>
+      <p><b>The ad company reports leads and cost per lead. The SEO company reports rankings.</b> Neither can tell
+      you which of your four jobs came from where, because nothing on the site records it.</p>
+      <p><b>That is also why you cannot judge the &pound;700 a month on SEO.</b> You told us the ad company ran
+      their own software over it and suggested the money might be better spent elsewhere &mdash; which is exactly
+      what a company that also sells SEO would say. Without tracking, you have no way to referee that.</p>
+      <p><b>Install measurement and the argument settles itself.</b> It is the cheapest thing on this list and
+      everything else depends on it.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 3 &mdash; What We Would Actually Build</div>
+    <div class="code">
+  1. <span class="ok">A LANDING PAGE BETWEEN THE AD AND THE FORM</span>
+     Not a form on its own. A page that says who this is for,
+     what a system costs, what happens on a survey, and what
+     you will not do. Video, not just text.
+     <span class="ok">People who are not serious leave here, for free.</span>
+
+  2. <span class="ok">ANSWERS TO THE QUESTIONS THEY ARE ALREADY ASKING</span>
+     What does it actually cost. How long does it take.
+     What happens on the day. Do I need scaffolding.
+     Will it work on my roof. Short videos, your face.
+     <span class="ok">Educated buyers answer the phone. Cold ones do not.</span>
+
+  3. <span class="ok">A FORM THAT SORTS THEM BEFORE YOU RING</span>
+     Roof type, rough usage, timescale, and whether they own
+     the property. Scored one to four.
+     <span class="ok">You ring the fours first. You stop ringing the ones.</span>
+
+  4. <span class="ok">MEASUREMENT, SO THIS STOPS BEING AN OPINION</span>
+     GA4, conversion tracking, call tracking, and a number
+     against each channel.
+
+  5. <span class="ok">THE SITE FIXES</span>
+     MCS register link, local business and service markup,
+     and a decision on commercial versus domestic.
+    </div>
+    <div class="win">
+      <div class="lab">Your ad company keeps doing what it is good at</div>
+      <p><b>We are not asking you to sack anybody.</b> They film well, they spend sensibly, and the creative is not
+      the problem. You told us new content from Corfu is going live imminently &mdash; that should run.</p>
+      <p><b>What we would change is where that traffic lands.</b> At the moment a video ad sends somebody straight
+      to a form. Nothing in between explains anything, so the people who arrive know nothing and the ones who are
+      curious rather than serious sail straight through.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Finding 4 &mdash; Decide What You Are Selling</div>
+    <div class="code">
+  Companies House lists you as a <span class="ph">commercial builder</span>.
+  Your website sells <span class="ph">domestic solar</span>.
+  You told us you are <span class="ok">looking into commercial</span>, and that you
+  are buying commercial leads from a portal at GBP160-GBP300 each.
+
+  NOBODY IS BIDDING ON GOOGLE FOR THIS IN YOUR AREA.
+  <span class="ok">Meta is the wrong channel for commercial. Search is the right
+  one, and the ground is empty.</span>
+    </div>
+    <div class="win">
+      <div class="lab">This is the part worth more than the lead-quality fix</div>
+      <p><b>You are already paying &pound;160 to &pound;300 a lead for commercial work on somebody else's
+      portal.</b> Those buyers are searching, not scrolling, and no competitor near you is bidding for them.</p>
+      <p><b>But the site cannot take them today,</b> because it reads as a domestic installer with a commercial
+      registration behind it. One clear commercial page, separated from the domestic journey, is what makes that
+      channel usable.</p>
+      <p><b>Your 26 town and service pages are the best structural thing you have</b> &mdash; Seed Renewables,
+      SunSmart and BlackTech have none between them. That work is already done and it is worth building on.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Are Not Going To Claim</div>
+    <div class="code">
+  <span class="ph">We will not promise you a booking rate.</span>
+     We aim for 50%. You are at 20%. We think it should be
+     better than 20% and we will not put a number on it.
+
+  <span class="ph">We will not promise a cost per lead.</span>
+     Ours typically run GBP40-GBP80, not GBP10. A dearer lead
+     that answers is cheaper than a cheap one that does not.
+
+  <span class="ph">We will not tell you to stop paying your ad company.</span>
+
+  <span class="ph">We will not ask for twelve thousand pounds up front.</span>
+    </div>
+    <div class="win">
+      <div class="lab">You rated what we showed you a ten. That is the part we have to be careful with.</div>
+      <p><b>A ten out of ten on a first call is usually where somebody starts overpromising.</b> You have been
+      there once already and it cost you twelve thousand pounds.</p>
+      <p><b>So the honest position: the diagnosis is solid and the fixes are ordinary.</b> Measurement, a page that
+      educates, a form that sorts, and a decision about commercial. None of it is clever. All of it is missing.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Order We Would Do It In</div>
+    <ul class="road">
+      <li><b>Measurement first.</b> GA4, conversion tracking, call tracking, a number per channel. Until this
+      exists nobody can referee the ads against the SEO, including us.</li>
+      <li><b>The landing page and the answer videos.</b> This is the piece that changes who picks up the phone.</li>
+      <li><b>The form, scored one to four,</b> so you stop spending evenings ringing people who were bored.</li>
+      <li><b>The site fixes</b> &mdash; MCS link, structured data, and the commercial-versus-domestic decision.</li>
+      <li><b>Then, and only then, more spend.</b> Doubling the budget today doubles the tyre-kickers. You said the
+      same thing yourself about the last time you scaled it.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="wrap">
+    <h2>Sixteen out of eighty answered the phone. That is the number to move.</h2>
+    <p>Not the cost per lead, and not the volume. The ads already work &mdash; what happens next does not.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 30 September 2026, for Jason Hunter at Hunter Build
+    &amp; Solar Ltd.
+    <b>Figures describing your business &mdash; 80 leads in six weeks, 16 answered, 4 converted, roughly 3 installs
+    a week, a capacity of 5, ticket values of &pound;10,000 to &pound;18,000, margins of &pound;2,500 to
+    &pound;3,500 a job, a &pound;10 cost per lead now against &pound;35 previously, around &pound;800,000 turned
+    over through those leads since February, &pound;700 a month on SEO and roughly &pound;1,200 a month in ad
+    management &mdash; are all as you reported them on the call of 23 September 2026 and have NOT been independently
+    verified by AG1.</b>
+    <b>Site and competitor findings were measured directly from your website and from Seed Renewables, SunSmart UK
+    and BlackTech Ltd before that call, and describe those sites as they stood when measured. They may have changed
+    since, and we would re-measure rather than rely on this document.</b>
+    <b>&#9888; No booking rate, contact rate, cost per lead, cost per acquisition, job volume, ranking or revenue
+    outcome is promised, forecast or guaranteed anywhere in this document. The 50% booking rate mentioned is what we
+    aim for across our own accounts, not a projection for yours. Advertising results are determined by the platforms
+    and the market, not by AG1.</b>
+    <b>The account of a previous supplier is reproduced as you described it and is your account, not a statement of
+    fact by AG1 about any third party.</b>
+    Product and company names are used for identification only and belong to their respective owners.
+  </div>
+</footer>
+</body></html>
