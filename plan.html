@@ -1,0 +1,440 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Plan of Action &middot; Hunter Build &amp; Solar Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Audit</a><a href="recap.html">Call Recap</a><a href="competitors.html">Competitors</a><a href="proposal.html">What We Propose</a><a href="plan.html" class="on">Plan of Action</a><a href="pricing.html">Deliverables &amp; Pricing</a><a href="https://andrei170.github.io/hunter-build-solar-demo/" class="ext">Concept Page</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Plan Of Action &middot; Hunter Build &amp; Solar Ltd &middot; Bury St Edmunds, Suffolk</div>
+    <h1>Fix The Bucket, Then Fill It</h1>
+    <div class="sub">Prepared for Jason Hunter &middot; 1 October 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Principle Everything Below Follows</div>
+    <div class="warn">
+      <div class="lab">Sequence matters more than tactics here</div>
+      <p>On the call we used a bucket. <b>Traffic is the water. The tracking, the qualifying and the follow-up are the
+      sides of the bucket.</b> Right now the sides have holes in them, so pouring in more water &mdash; more ad spend
+      &mdash; moves the problem rather than solving it. You proved this yourself: last time you spent roughly double
+      and got &ldquo;a lot more jobs that qualified, but a lot more tyre kickers again as well.&rdquo;</p>
+      <p>So the order below is not a preference. <b>Phase 0 has to happen before any spend decision is worth making</b>,
+      because until it does, nobody &mdash; us, your ad company, or you &mdash; can prove which channel produced which
+      job. Everything after that is optional and sequenced by what it returns.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Phase 0 &mdash; Make It Measurable &middot; Week 1</div>
+    <p style="color:var(--mut);font-size:14.5px;margin-bottom:16px">Nothing here is creative work. It is the
+    instrumentation that makes every later decision an evidenced one rather than an argument between suppliers.</p>
+    <table class="cmp">
+      <tr><th>#</th><th>Action</th><th>Why it is first</th></tr>
+      <tr><td>1</td><td><b>Install GA4 and Google Tag Manager</b></td><td>There is currently no analytics of any kind on the site. Until this exists, nothing else can be measured.</td></tr>
+      <tr><td>2</td><td><b>Conversion tracking on every enquiry route</b> &mdash; both forms and all three tappable numbers</td><td>So a submitted form and a tapped phone number both register as events, not just as traffic.</td></tr>
+      <tr><td>3</td><td><b>Call tracking with a separate number per channel</b></td><td>Your highest-intent enquiries arrive by phone. Right now none of them are attributed to anything. ⚠️ Keep the MCS-registered <b>01284 765263</b> as the published number and route tracking numbers alongside it, so the register and the site agree.</td></tr>
+      <tr><td>4</td><td><b>Reinstall the Meta pixel correctly and start a fresh conversion window</b></td><td>It is not correctly installed, and the pixel only retains 180 days &mdash; January and February data has already rolled off regardless.</td></tr>
+      <tr><td>5</td><td><b>UTM discipline on every link your ad company and SEO company publish</b></td><td>This is the single change that ends the attribution argument. Without it, the platform gets credit for search traffic by default.</td></tr>
+      <tr><td>6</td><td><b>One dashboard: leads, answered, surveyed, sold &mdash; by source</b></td><td>Four numbers. You currently have the first one only, reported to you by the people being judged on it.</td></tr>
+    </table>
+    <div class="win" style="margin-top:16px">
+      <div class="lab">What Phase 0 alone changes</div>
+      <p>Within a fortnight you can answer a question you cannot answer today: <b>of the 10&ndash;12 enquiries a month
+      your &pound;700 SEO produces, and the 80 a month your &pound;3,000 social produces, which ones became the three
+      installs you did this week?</b></p>
+      <p>That one answer determines whether the right move is more spend, different spend, or less spend. <b>It is also
+      the cheapest thing on this page.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Phase 1 &mdash; Stop Paying To Speak To The Wrong People &middot; Weeks 1&ndash;2</div>
+
+    <div class="flag">
+      <div class="lab">1.1 &mdash; A landing page between the ad and the form</div>
+      <p>At the moment the ad links <b>straight to a form</b>. There is nothing in between that explains who you are,
+      what you do, what it costs roughly, and &mdash; critically &mdash; <b>who this is not for</b>. So the form is the
+      first and only filter, and a form cannot filter.</p>
+      <p>What goes on it:</p>
+      <ul>
+        <li><b>A short video from you.</b> Not a produced ad &mdash; you, explaining what happens next and what you
+        need from them. You are MCS certified, 19 years trading, and you survey personally. That is the pitch.</li>
+        <li><b>Objection videos.</b> The four we hear constantly, and which your buyers are definitely thinking:
+        <i>&ldquo;I've been burned before&rdquo;</i>, <i>&ldquo;how do I know the quote is honest&rdquo;</i>,
+        <i>&ldquo;how long until it pays for itself&rdquo;</i>, <i>&ldquo;what happens if something goes wrong in five
+        years&rdquo;</i>.</li>
+        <li><b>Real installs, not stock photography.</b> You have been filming for eight months.</li>
+        <li><b>A plain statement of who it is not for.</b> The single most effective line on any page like this. If it
+        says you work on properties the customer owns, with a roof of a certain size, and that a typical job is
+        &pound;10,000&ndash;&pound;18,000, the bored night-shift form-filler leaves. <b>That is the entire point.</b></li>
+      </ul>
+      <p>⚠️ <b>This will reduce your lead count and that is the intended outcome.</b> Expect your ad company's report to
+      show a worse cost-per-lead. That number was always the wrong one &mdash; your own words.</p>
+    </div>
+
+    <div class="flag">
+      <div class="lab">1.2 &mdash; Rebuild the form so it qualifies rather than just being long</div>
+      <p>Your form is already long. Length is not qualification. Replace or add the fields that separate a 12-panel
+      enquiry from an 80-panel one:</p>
+      <table class="cmp" style="margin-top:12px">
+        <tr><th>Field</th><th>What it filters out</th></tr>
+        <tr><td><b>Do you own the property?</b></td><td>Tenants, who cannot buy, no matter how interested.</td></tr>
+        <tr><td><b>Roughly how large is the roof / how many bedrooms?</b></td><td>Lets you size the job before driving.</td></tr>
+        <tr><td><b>Roughly what is your current electricity bill?</b></td><td>The strongest single predictor of whether solar makes financial sense for them.</td></tr>
+        <tr><td><b>When are you looking to have this done?</b></td><td>Separates "this quarter" from "one day, maybe".</td></tr>
+        <tr><td><b>Upload a recent bill, or your half-hourly usage data</b> &mdash; optional</td><td>⭐ The most powerful filter on the list. Almost nobody without genuine intent will go and find a bill. Anyone who does is close to buying.</td></tr>
+        <tr><td><b>Are you an installer or trade?</b></td><td>Will not stop all of them, but it makes the six-a-week price-checkers declare themselves or lie on a form, which is a different conversation.</td></tr>
+      </table>
+    </div>
+
+    <div class="flag">
+      <div class="lab">1.3 &mdash; Score the leads one to four, and work the fours first</div>
+      <p>With those fields, every enquiry gets a score automatically. <b>Four</b> = owns the property, large bill,
+      wants it this quarter. <b>One</b> = rents, no bill, "just curious".</p>
+      <p>You stop working the list in arrival order. Your mornings go to fours and threes. Ones and twos get an
+      automated email sequence and nothing else &mdash; <b>no driving, no survey</b>. Given that surveying is your
+      genuine bottleneck at a day to a day and a half per job, this is where your week gets handed back to you.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">1.4 &mdash; Speed to lead, and the overnight problem</div>
+      <p>You already call within five to ten minutes in working hours, which is genuinely good and better than most.
+      <b>The gap is overnight.</b> Leads arriving after 7pm sit until morning and go cold.</p>
+      <p>Two fixes, neither involving an AI voice &mdash; and to be explicit, <b>nothing here puts a robot on the phone
+      to your customers</b>:</p>
+      <ul>
+        <li><b>An automatic text within 60 seconds, from your number, in your words.</b> Not a call. Something like:
+        <i>"Thanks for the enquiry &mdash; it's Jason at Hunter Build &amp; Solar. I'm not calling this late, but I'll
+        ring you tomorrow. If there's a better time, reply here."</i> It holds the lead and sets the callback.</li>
+        <li><b>Day-parting the ads</b> so less budget runs at 1am. Your ad company controls this &mdash; you were told
+        &ldquo;they control all that&rdquo; &mdash; so it is a request to make, not something to configure yourself.</li>
+      </ul>
+    </div>
+
+    <div class="warn">
+      <div class="lab">1.5 &mdash; Replace the manual log with a CRM</div>
+      <p>You track follow-up on paper, chase for two or three days, then stop. Everything before that disappears.
+      A basic CRM gives you an automatic sequence across call, text and email over about two weeks rather than three
+      days, a permanent record of every enquiry, and &mdash; most valuably &mdash; <b>a reactivation list</b>. See
+      campaign 9.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Phase 2 &mdash; Decide What The Business Sells &middot; Weeks 2&ndash;3</div>
+    <div class="flag">
+      <div class="lab">The incongruence costs you the largest jobs</div>
+      <p>Companies House has you as <b>41201 &mdash; construction of commercial buildings</b>, 19 years trading,
+      formerly Hunter Building Developments Ltd. Your homepage runs 4,157 words and says &ldquo;home&rdquo; 19 times
+      against &ldquo;business&rdquo; twice. The meta description opens with &ldquo;domestic solar panels&rdquo;.</p>
+      <p><b>The largest thing you do is the thing you never advertise.</b> You told us you are looking at commercial,
+      and you are already being offered commercial leads at &pound;160&ndash;&pound;300 each by a portal.</p>
+      <p>The fix is a split, not a rewrite &mdash; and you already publish <b>seven commercial solar pages</b>:</p>
+      <ul>
+        <li><b>Domestic stays exactly as it is.</b> It works and it ranks.</li>
+        <li><b>Commercial gets its own entrance</b> &mdash; its own landing page, its own form asking building type,
+        floor area and half-hourly data, its own phone number so it is tracked separately.</li>
+        <li><b>The building history gets used.</b> Nineteen years of construction, and roofs are your trade. For a
+        commercial buyer, &ldquo;we are builders who do solar&rdquo; beats &ldquo;we are a solar company&rdquo;
+        comfortably.</li>
+      </ul>
+    </div>
+    <table class="cmp">
+      <tr><th>Also in Phase 2</th><th>Effort</th></tr>
+      <tr><td><b>Add your website to the MCS register entry.</b> 69 of 113 installers within 45 miles are clickable from the register. You are not.</td><td class="yes">One email to NAPIT. Free. This week.</td></tr>
+      <tr><td><b>Publish the landline 01284 765263 on the site</b> so it matches the register.</td><td class="yes">Minutes</td></tr>
+      <tr><td><b>Add LocalBusiness and Service structured data.</b> Two of three nearby rivals have it.</td><td>Half a day</td></tr>
+      <tr><td><b>Claim and complete the Google Business Profile</b> &mdash; service areas, photos of real installs, review prompt after every job.</td><td>Ongoing, free</td></tr>
+      <tr><td><b>Restart the blog.</b> Untouched since February. Two posts a month against the town pages you already rank for.</td><td>Ongoing</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Phase 3 &mdash; The Campaigns &middot; Week 3 Onward</div>
+    <p style="color:var(--mut);font-size:14.5px;margin-bottom:18px">Eleven campaigns, ordered by what they return
+    against what they cost to stand up. <b>Numbers 1, 2, 5 and 9 are where we would start</b> &mdash; 9 costs nothing
+    and uses leads you have already paid for.</p>
+
+    <div class="win">
+      <div class="lab">⭐ 1 &mdash; Google Ads, commercial solar &middot; the open goal</div>
+      <p>We checked the three nearest competitors we could find &mdash; <b>Seed Renewables, SunSmart UK and BlackTech
+      Ltd</b>, none of whom you had heard of. <b>None of them is running a Google Ads tag. Nobody local is bidding.</b></p>
+      <p>This matters more than it sounds. A person typing <i>&ldquo;commercial solar installer Suffolk&rdquo;</i> into
+      Google is not bored at 2am. They have a building, a bill and a reason. <b>It is the exact opposite of the traffic
+      currently filling your form.</b></p>
+      <p>Start small and exact-match: commercial solar installer + your towns, business solar panels, warehouse /
+      factory / farm solar, commercial solar Suffolk / Norfolk / Cambridgeshire. Point it at the Phase 2 commercial
+      page, not the homepage.</p>
+      <p>⚠️ Honest caveat: no competition can also mean no search volume in a given month. <b>The first fortnight is a
+      volume test, not a performance test</b> &mdash; and it is cheap to run.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">⭐ 2 &mdash; Google Ads, domestic high-intent</div>
+      <p>The same logic, smaller tickets, more volume. &ldquo;Solar panel installers near me&rdquo;, &ldquo;solar
+      panels [town]&rdquo;, &ldquo;MCS certified installer [town]&rdquo;, &ldquo;solar battery installation&rdquo;.</p>
+      <p>Two reasons it is worth running alongside the social: <b>it captures demand rather than creating it</b>, so
+      answer rates are structurally higher than interruption ads; and <b>it directly tests the claim that your SEO
+      spend is wasted</b>. If paid search converts well on the same terms you rank for organically, the organic traffic
+      is worth more than the report suggested.</p>
+      <p>Also run a small <b>brand-defence</b> campaign on &ldquo;Hunter Build and Solar&rdquo;. Pennies, and it stops
+      a competitor appearing above you when someone searches your name after seeing an ad.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">3 &mdash; Restructure the Meta campaign around a deeper event</div>
+      <p>Not a replacement for Think Grow Media &mdash; a request to them. <b>Stop optimising for form submissions.</b>
+      Optimise for a deeper event: a qualified submission, or a booked survey. That changes who Meta goes looking for.</p>
+      <p>Alongside it: day-parting, excluding audiences that look like the non-answerers, and a fresh conversion window
+      on the reinstalled pixel. <b>This single change addresses the 50/50 ratio at its root</b>, because the ratio is
+      what the pixel was taught to produce.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">4 &mdash; Creative cadence</div>
+      <p>&ldquo;A light that shines twice as bright burns half as long.&rdquo; The decline covers six weeks; the
+      creative was eight weeks old. <b>A new asset every 7&ndash;10 days</b>, not a large shoot every two months.</p>
+      <p>The Corfu batch should produce a lot of short cuts rather than a few polished films. For scale: a roofing
+      company we work with runs <b>96 live creatives</b>. You do not need 96 &mdash; but one batch every two months is
+      the thing causing the pattern you described, where it works brilliantly then fades.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">⭐ 5 &mdash; Retarget the sixty-four who never answered</div>
+      <p>Sixty-four people in six weeks gave you their details and then did not pick up the phone. <b>You have already
+      paid for every one of them.</b> Some were time-wasters. Some were at work, or nervous, or had a partner to
+      convince.</p>
+      <p>Build a custom audience of form-fillers who never became customers and run <b>trust content</b> at them, not
+      offers: the objection videos, a real install from their town, you explaining what a survey involves and that it
+      costs nothing. The cheapest audience you will ever advertise to.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">6 &mdash; The 80-panel campaign</div>
+      <p>Your largest residential job was <b>80 panels, roof plus ground mount</b>. Nothing in your marketing says you
+      do work at that scale, so you are shown to people imagining a 12-panel terrace.</p>
+      <p>A campaign built entirely around that one install &mdash; the scale, the ground mount, the bill before and
+      after &mdash; targeted at large detached and rural properties, raises the average job size <b>without increasing
+      lead volume at all</b>. At &pound;2,500&ndash;&pound;3,500 profit a job, a bigger average job is worth more than
+      a bigger list.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">7 &mdash; Agricultural and rural commercial</div>
+      <p>Suffolk, Norfolk and Cambridgeshire are farm country. Barns and sheds have <b>large, simple, south-facing
+      roofs with no planning complications</b>, and agricultural businesses have genuine daytime load &mdash; the best
+      possible case for solar economics.</p>
+      <p>Reachable through the farming press, county shows and NFU channels rather than Facebook interest targeting.
+      Slower to build, and the job sizes are the largest available to you.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">8 &mdash; LinkedIn for commercial</div>
+      <p>You are already paying Think Grow Media to post there. Commercial solar is a considered B2B purchase, so
+      LinkedIn fits it in a way it does not fit domestic.</p>
+      <p>Target facilities managers, operations directors and owners of SMEs with premises inside your radius.
+      <b>⛔ We would not recommend Meta for commercial at all</b> &mdash; wrong audience, wrong mindset.</p>
+    </div>
+
+    <div class="win">
+      <div class="lab">⭐ 9 &mdash; Database reactivation &middot; costs nothing</div>
+      <p>Every enquiry since January that never converted, and every customer who bought panels but not a battery.
+      A short, polite sequence over a fortnight &mdash; not a blast.</p>
+      <p>Two angles that are genuinely current: <b>battery retrofit</b> to people who already have your panels (no
+      acquisition cost, no roof survey, you have already built trust), and anyone who said &ldquo;not right now&rdquo;
+      six months ago, for whom right now may have arrived.</p>
+      <p><b>⚠️ This needs the CRM from Phase 1.5 to exist first</b>, because the records currently live in a manual log.
+      It is the highest-return item on this page and the cheapest, and it is blocked until that is in place.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">10 &mdash; Formalise the referrals</div>
+      <p>Referral is already <b>20% of your jobs</b> with no system behind it whatsoever. A written referral offer to
+      past customers, a review request sent automatically after every install, and a simple reward turns an accident
+      into a channel.</p>
+      <p>Referred customers also answer the phone, which is the number this entire document is about.</p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">11 &mdash; The "been burned" campaign</div>
+      <p>You paid &pound;12,000 to a company that vanished to Dubai. <b>Your customers carry the same fear about solar
+      installers</b> &mdash; the industry has deserved it, and they have read the stories.</p>
+      <p>Content that meets it head on: what MCS certification actually guarantees and how to check it on the register
+      yourself, what your workmanship warranty covers, what happens if a panel fails in year seven, and how to read a
+      solar quote so you can tell whether it is honest.</p>
+      <p>It converts the nervous. It also <b>disqualifies nobody you wanted</b>, which is rare.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Whole Thing On One Page</div>
+    <table class="cmp">
+      <tr><th>Phase</th><th>When</th><th>What it does</th></tr>
+      <tr class="you"><td><b>0 &mdash; Measurement</b></td><td>Week 1</td><td>Makes every later decision evidenced. <b>Nothing else should start before this.</b></td></tr>
+      <tr><td><b>1 &mdash; Qualifying layer</b></td><td>Weeks 1&ndash;2</td><td>Landing page, rebuilt form, lead scoring, overnight text, CRM. Moves the 16-of-80.</td></tr>
+      <tr><td><b>2 &mdash; Positioning</b></td><td>Weeks 2&ndash;3</td><td>Commercial split, MCS link, schema, GBP. Raises average job size.</td></tr>
+      <tr><td><b>3 &mdash; Campaigns</b></td><td>Week 3+</td><td>Google Ads commercial and domestic, Meta restructure, retargeting, reactivation, referral.</td></tr>
+      <tr><td><b>Then, and only then</b></td><td>Week 6+</td><td><b>Increase spend.</b> Once the bucket holds water, more water is finally worth buying.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Are Deliberately Not Doing</div>
+    <table class="cmp">
+      <tr><th>Not doing</th><th>Why</th></tr>
+      <tr><td><b>Replacing Think Grow Media</b></td><td>That channel has turned over &pound;800,000 since February and you said you want to give the new creative its run. Most of Phase 3 is requests to them, not work instead of them.</td></tr>
+      <tr><td><b>Cancelling your SEO</b></td><td>&pound;700/mo for 10&ndash;12 enquiries is your most efficient channel and it is only two months old. We would measure it properly before anyone decides it is wasted &mdash; which is exactly what Phase 0 does.</td></tr>
+      <tr><td><b>Any AI receptionist or robot caller</b></td><td>You said it twice and we agree. No automated voice will ever speak to your customers.</td></tr>
+      <tr><td><b>A large upfront fee</b></td><td>TNW. See <a href="pricing.html" style="color:var(--accent)">pricing</a>.</td></tr>
+      <tr><td><b>Promising lead numbers, answer rates or revenue</b></td><td>We do not know what your market will do. Everything here is a mechanism with a reason, not a forecast.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The First Three Things, If Nothing Else Happens</div>
+    <ul class="road road2">
+      <li><b>1. Email NAPIT and get your website on the MCS register.</b> Free, one email, this week. 69 of 113 local installers already have it.</li>
+      <li><b>2. Install GA4 and conversion tracking.</b> Until this exists, every conversation about which channel works is opinion.</li>
+      <li><b>3. Ask your ad company to optimise for a deeper event than a form submission</b>, and to day-part the overnight spend. Costs nothing and addresses the 50/50 ratio at source.</li>
+    </ul>
+    <div class="oppnote" style="margin-top:16px">
+      None of those three requires AG1, a contract, or a penny paid to us. <b>They are the right first moves whether
+      you work with us or not</b>, and you should do them either way.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; 1 October 2026, following the call of 23 September 2026.
+    <b>All business figures referenced &mdash; installs per week, enquiry counts, ticket sizes, margins, turnover,
+    supplier costs and the 80/16/4 outcome &mdash; are as reported by Jason Hunter and have not been independently
+    verified.</b> Site, Companies House and MCS register findings were read on 23 and 30 September 2026 and are
+    reproducible; items recorded as "not found" describe what a static read of the served HTML returned and are not
+    proof of absence. <b>Competitor observations cover three nearby installers we were able to identify and measure and
+    are not a survey of the market; "nobody is bidding on Google" describes the absence of a Google Ads tag on those
+    sites when read, which is evidence of absence of a tag, not proof that no competitor advertises.</b> Installer
+    counts and distances are straight-line calculations from registered postcodes, not drive times. <b>We have not
+    identified, named or assessed any lead-generation platform.</b> Think Grow Media and TNW are named only because
+    Jason named them; nothing here assesses Think Grow Media's work beyond the figures he reported. <b>No enquiry,
+    answer rate, booked job, ranking or revenue outcome is forecast or promised, and every campaign described is a
+    proposal to be tested, not a predicted result.</b>
+  </div>
+</footer>
+</body></html>
