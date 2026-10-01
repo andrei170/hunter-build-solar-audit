@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Call Recap &middot; Hunter Build &amp; Solar Ltd &middot; AG1 Consulting</title><style>
+:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--mut:#9aa7b4;--line:#2a3340;--accent:#2f81f7;
+  --good:#3fb950;--bad:#f85149;--gradF:#f85149;--gradD:#e8702a;--gradC:#d29922;--gradB:#3fb950;--gradA:#2ea043;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(47,129,247,.18),transparent)}
+h1{font-size:30px;font-weight:800;margin:10px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--mut);font-size:15px}
+.hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}}
+.gradecard{border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;position:relative;overflow:hidden}
+.gc-F{background:linear-gradient(160deg,#2a1410,#1c2330)}.gc-D{background:linear-gradient(160deg,#2a1c10,#1c2330)}
+.gc-C{background:linear-gradient(160deg,#2a2410,#1c2330)}.gc-B{background:linear-gradient(160deg,#102a1a,#1c2330)}
+.bigletter{font-size:96px;font-weight:900;line-height:1;position:relative}
+.bl-F{color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.45)}
+.bl-D{color:var(--gradD);text-shadow:0 0 40px rgba(232,112,42,.45)}
+.bl-C{color:var(--gradC);text-shadow:0 0 40px rgba(210,153,34,.45)}
+.score100{font-size:18px;color:var(--mut);margin-top:6px;position:relative}
+.heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+.heroread p{color:var(--mut);font-size:15.5px}
+.heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink);background:var(--panel)}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.rname{font-weight:600;font-size:15px}
+.bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+.fill{height:100%;border-radius:99px}
+.badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+.gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+.sc{font-size:12px;color:var(--mut);margin-top:3px}
+.flag{background:linear-gradient(160deg,#2a1410,#161b22);border:1px solid #6f2a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.flag .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--bad);font-weight:700;margin-bottom:8px}
+.win{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.win .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--good);font-weight:700;margin-bottom:8px}
+.warn{background:linear-gradient(160deg,#2a2410,#161b22);border:1px solid #6f5a1f;border-radius:14px;padding:20px 22px;margin-bottom:14px}
+.warn .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gradC);font-weight:700;margin-bottom:8px}
+.flag p,.win p,.warn p{color:var(--mut);font-size:14.5px;margin-bottom:9px}
+.flag p:last-child,.win p:last-child,.warn p:last-child{margin-bottom:0}
+.flag b,.win b,.warn b{color:var(--ink)}
+.flag ul,.win ul,.warn ul{margin:0 0 9px 20px;color:var(--mut);font-size:14.5px}
+.flag li,.win li,.warn li{margin-bottom:6px}
+.code{background:#0b0f15;border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.85;color:var(--mut);overflow-x:auto}
+.code .ph{color:#ff9d94;font-weight:700}.code .ok{color:#84e0a8;font-weight:700}.code .c{color:#5b6672}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.cmp th{text-align:left;padding:11px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid var(--line);font-weight:700}
+.cmp td{padding:11px 14px;border-bottom:1px solid var(--line);color:var(--mut);vertical-align:top}
+.cmp tr:last-child td{border-bottom:none}.cmp td b{color:var(--ink)}.cmp tr.you td{background:#241a12}
+.cmp .yes{color:var(--good);font-weight:700}.cmp .no{color:var(--bad);font-weight:700}
+.opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media(max-width:760px){.opp{grid-template-columns:1fr}}
+.ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+.ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+.ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+.ocard .small{font-size:13px;color:var(--mut)}
+.oppnote{color:var(--mut);font-size:14px;margin-top:14px}.oppnote b{color:var(--ink)}
+.arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+.pill{font-size:60px;font-weight:900;line-height:1}
+.pill.from-F{color:var(--gradF)}.pill.from-D{color:var(--gradD)}.pill.from-C{color:var(--gradC)}
+.pill.to{color:var(--gradA)}
+.pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+.ar{font-size:34px;color:var(--mut)}
+ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:760px){ul.road{grid-template-columns:1fr}}
+ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+.road2 li{border-left-color:var(--good)}
+.cta{text-align:center;padding:40px 0 56px}
+.cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.cta p{color:var(--mut);font-size:15px}
+footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px;line-height:1.7}
+.gscale{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 26px 20px;margin-top:16px}
+.gscale .gtitle{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);font-weight:700;margin-bottom:26px;text-align:center}
+.gtrack{position:relative;height:14px;border-radius:8px;background:linear-gradient(90deg,#f85149 0%,#f85149 18%,#e3833c 34%,#d4a72c 52%,#7ec46a 74%,#3fb950 100%);margin:0 4px}
+.gmark{position:absolute;top:-46px;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.gmark .gm-lab{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);font-weight:700}
+.gmark .gm-val{font-size:19px;font-weight:900;line-height:1.15}
+.gmark:after{content:"";position:absolute;left:50%;top:100%;width:2px;height:22px;transform:translateX(-50%);background:currentColor;opacity:.75}
+.gmark.now{color:var(--bad)}.gmark.now .gm-val{color:var(--bad)}
+.gmark.proj{color:var(--good)}.gmark.proj .gm-val{color:var(--good)}
+.gmark.proj{top:auto;bottom:-52px}
+.gmark.proj:after{top:auto;bottom:100%}
+.gdot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;transform:translate(-50%,-50%);border:3px solid #0d1117}
+.gdot.now{background:var(--bad)}.gdot.proj{background:var(--good)}
+.gticks{display:flex;justify-content:space-between;margin:66px 4px 0;font-size:11px;letter-spacing:.08em;color:var(--mut);font-weight:700}
+@media(max-width:620px){.gmark .gm-lab{font-size:9px}.gmark .gm-val{font-size:16px}}
+
+/* ---------- injected asset nav ---------- */
+/* display/padding/margin are declared explicitly so a page carrying its own bare
+   nav{} element rule (concept mockups do) cannot restyle the AG1 bar. */
+.agnav{display:block;padding:0;margin:0;position:sticky;top:0;z-index:80;background:rgba(13,17,23,.92);backdrop-filter:saturate(1.5) blur(10px);border-bottom:1px solid var(--line)}
+.agnav .inner{max-width:1080px;margin:0 auto;padding:0 22px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.agnav a{display:inline-block;padding:12px 14px;font-size:14px;font-weight:600;color:var(--mut);text-decoration:none;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.agnav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+.agnav a.ext{color:var(--accent)}
+.agnav a.ext:hover{color:#fff}
+@media(max-width:560px){.agnav .inner{padding:0 14px}.agnav a{padding:10px 9px;font-size:13px}}
+</style></head><body>
+<nav class="agnav"><div class="inner"><a href="assets.html">All Assets</a><a href="./">Audit</a><a href="recap.html" class="on">Call Recap</a><a href="competitors.html">Competitors</a><a href="proposal.html">What We Propose</a><a href="plan.html">Plan of Action</a><a href="pricing.html">Deliverables &amp; Pricing</a><a href="https://andrei170.github.io/hunter-build-solar-demo/" class="ext">Concept Page</a></div></nav>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Call Recap &middot; Hunter Build &amp; Solar Ltd &middot; Bury St Edmunds, Suffolk</div>
+    <h1>Where You Are Now, Where You Said You Want To Be</h1>
+    <div class="sub">Prepared for Jason Hunter &middot; recap of the call of 23 September 2026 &middot; AG1 Consulting</div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="h">Why This Page Exists</div>
+    <div class="warn">
+      <div class="lab">So nothing gets re-litigated on the next call</div>
+      <p>This is a written record of what you told us on <b>23 September</b>, so the next conversation starts from
+      agreed facts rather than from memory. Everything in the first two sections is <b>your figure or your words</b>,
+      not ours. Where we have added arithmetic, it is labelled as arithmetic.</p>
+      <p>If any number here is wrong, it is worth correcting before anything gets built on top of it &mdash; several
+      of the recommendations further down only hold if these are right.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Business, As You Described It</div>
+    <table class="cmp">
+      <tr><th>What</th><th>Your figure</th></tr>
+      <tr class="you"><td><b>Installs per week, now</b></td><td><b>3</b> &mdash; with capacity for <b>2 more</b>. &ldquo;If we could do five per week, that'd be fine.&rdquo;</td></tr>
+      <tr><td><b>Enquiries per week</b></td><td>15&ndash;20</td></tr>
+      <tr><td><b>Typical job</b></td><td>20 panels residential. Smallest around 12. Largest <b>80 panels</b> &mdash; roof plus ground mount, still residential.</td></tr>
+      <tr><td><b>Ticket</b></td><td>&pound;10,000&ndash;&pound;12,000 at the low end, up to <b>&pound;18,000</b></td></tr>
+      <tr><td><b>Profit per job</b></td><td><b>&pound;2,500&ndash;&pound;3,500</b>, on roughly a day's install. You put the margin at 40%, then revised it to <b>~30%</b> on reflection.</td></tr>
+      <tr><td><b>Annual turnover</b></td><td>~&pound;1.5m&ndash;&pound;2m. You want to <b>double it</b> &mdash; &ldquo;definitely.&rdquo;</td></tr>
+      <tr><td><b>Share from referral</b></td><td>~20% of jobs</td></tr>
+      <tr><td><b>Service area</b></td><td>Suffolk, Norfolk, Cambridge. Occasionally further &mdash; you mentioned Oxford once.</td></tr>
+      <tr><td><b>Main constraint, in your words</b></td><td>&ldquo;Probably just we need more people.&rdquo; You recently had to let two go, and you can bring in other installers when needed.</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What You Are Currently Paying For</div>
+    <table class="cmp">
+      <tr><th>Supplier</th><th>What they do</th><th>Cost</th></tr>
+      <tr><td><b>Think Grow Media</b></td><td>Video ads across Facebook, Instagram, some LinkedIn. They film installations and customers. Latest shoot was in <b>Corfu</b>, one day, 6.30am to midnight.</td><td><b>&pound;1,200/mo</b> management, <b>&pound;2,500&ndash;&pound;3,000/mo</b> all-in including spend</td></tr>
+      <tr><td><b>Website &amp; SEO company</b></td><td>Built the site in January. SEO running roughly two months. Producing <b>10&ndash;12 enquiries a month</b>.</td><td><b>&pound;700&ndash;&pound;750/mo</b> inc VAT</td></tr>
+      <tr class="you"><td colspan="2"><b>Total monthly marketing spend</b></td><td><b>~&pound;3,700/mo</b></td></tr>
+    </table>
+    <div class="oppnote">
+      <b>One thing worth flagging before the next call:</b> your ad company ran an audit on your SEO company's work
+      and told you the &pound;750 is probably wasted. Your own summary was that they &ldquo;seem to think 750 is not
+      enough.&rdquo; They also do websites and SEO. That is not a reason to dismiss the report &mdash; it may well be
+      right &mdash; but a supplier auditing a rival supplier's work and concluding it should be moved to them is a
+      report to read with that in mind.
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Problem, In Your Own Numbers</div>
+
+    <div class="flag">
+      <div class="lab">The number this all comes back to</div>
+      <p><b>80 leads in six weeks produced 4 jobs.</b> Roughly <b>20% answered the phone</b> &mdash; about 16 of the 80.
+      Of those 16 conversations, 4 became installs.</p>
+      <p>So the loss is not at the close. <b>Sixty-four people never picked up at all.</b> You call, leave voicemails,
+      email, text &mdash; and you can see the messages have been read.</p>
+      <p>Your own verdict on the reporting: <b>&ldquo;&pound;10 per lead is no good if they don't answer the phone.&rdquo;</b></p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">And it has got worse, not better</div>
+      <p>Since January you put the qualified-to-unqualified split at roughly <b>50/50</b>. On the current campaign you
+      said plainly it has <b>&ldquo;not been as good as the first campaign&rdquo;</b> &mdash; the first one, you were
+      &ldquo;snowballed with people that wanted to go ahead.&rdquo;</p>
+      <p>The detail that matters most: on the <b>earlier, better campaign you were paying around &pound;35 a lead</b>.
+      You are now paying <b>&pound;10</b>. The cheaper the lead got, the worse the business got. That is not a
+      coincidence and it is the single most useful fact from the whole call.</p>
+      <p>You were also spending roughly double at that time, and were told the current campaign would &ldquo;go a
+      little bit easy to begin with.&rdquo;</p>
+    </div>
+
+    <div class="flag">
+      <div class="lab">Who is actually filling the form in</div>
+      <ul>
+        <li><b>Competitors.</b> You had <b>six last week</b> that were &ldquo;very obvious&rdquo; rival installers
+        changing panel sizes and inverters to price-check you.</li>
+        <li><b>People with no intent at all.</b> One told you outright they were up on a night shift and bored.</li>
+        <li><b>Overnight traffic.</b> A lot arrives after 7pm and the phone is &ldquo;pinging all night.&rdquo; You are
+        reasonably not calling at that hour, so those leads are hours cold by morning.</li>
+      </ul>
+      <p>Asked whether the hours could be restricted, your answer was: <b>&ldquo;They control all that. I don't have
+      anything to do with that.&rdquo;</b></p>
+    </div>
+
+    <div class="warn">
+      <div class="lab">And nothing is being recorded</div>
+      <p>You track follow-up <b>manually</b> &mdash; a log of who you called, emailed and texted, repeated for two or
+      three days, then stopped. There is no CRM, no automated sequence, and no record that survives the week.</p>
+      <p>You have been pitched instant-callback systems repeatedly and rejected them because they are AI.
+      <b>&ldquo;If I've had people following me, and it's AI receptionists, I'll just put the phone down.&rdquo;</b>
+      Noted, and agreed with. Nothing we propose involves an AI voice answering your customers.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What Is Working &mdash; And This Matters</div>
+    <div class="win">
+      <div class="lab">This is not a case for firing anybody</div>
+      <p><b>That channel has turned over close to &pound;800,000 since February.</b> You said so yourself and you were
+      right to. A channel producing &pound;800k is not a failed channel.</p>
+      <p>It has <b>degraded</b>. The question for the next call is when it degraded and why &mdash; not whether to
+      scrap it. The creative was filmed eight weeks before we spoke, the decline covers the last six, and new material
+      was shot in Corfu and was due to go live the week after our call. <b>That timing is worth checking before any
+      conclusion is drawn.</b></p>
+      <p>Your own position was that you are not removing anyone yet: &ldquo;I'm still probably going to carry on with
+      the video ads for the time being.&rdquo; Nothing here asks you to change that.</p>
+    </div>
+    <div class="win">
+      <div class="lab">Your SEO is also not the problem</div>
+      <p><b>&pound;700/mo is producing 10&ndash;12 enquiries a month.</b> Against &pound;3,000/mo producing 4 real ones
+      in six weeks, it is comfortably your most efficient channel &mdash; and it is only two months old, which is
+      early for search. Search enquiries also arrive with intent by definition; nobody idly Googles &ldquo;solar
+      installer Bury St Edmunds&rdquo; at 2am out of boredom.</p>
+      <p>You have <b>26 town-and-service pages</b> across seven towns. That is better structure than any nearby
+      competitor we were able to measure.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What We Found Before The Call</div>
+    <p style="color:var(--mut);font-size:14.5px;margin-bottom:16px">Nine findings were presented on the call. The full
+    evidence for each is in the <a href="./" style="color:var(--accent)">audit</a>; this is the summary so you have it
+    in one place.</p>
+    <table class="cmp">
+      <tr><th>#</th><th>Finding</th><th>Status</th></tr>
+      <tr><td>1</td><td><b>No conversion tracking.</b> No GA4, no Tag Manager, no Google Ads tag.</td><td class="no">Fail</td></tr>
+      <tr><td>2</td><td><b>No attribution.</b> Platform leads and website leads cannot be told apart. By default the platform gets credit for both.</td><td class="no">Fail</td></tr>
+      <tr><td>3</td><td><b>No call tracking.</b> Your highest-intent enquiries arrive by phone and none of them are attributed.</td><td class="no">Fail</td></tr>
+      <tr><td>4</td><td><b>Meta pixel not correctly installed</b> &mdash; and the pixel only retains 180 days, so the data from January&ndash;February has already rolled off.</td><td class="no">Fail</td></tr>
+      <tr><td>5</td><td><b>Lead quality.</b> 80 &rarr; 4.</td><td class="no">Fail</td></tr>
+      <tr><td>6</td><td><b>Creative freshness.</b> Nothing new since the shoot eight weeks prior.</td><td class="no">Weak</td></tr>
+      <tr><td>7</td><td><b>Positioning incongruence.</b> Companies House registers you as <b>41201 &mdash; construction of commercial buildings</b>, trading 19 years, formerly Hunter Building Developments Ltd. The website never mentions building work once.</td><td class="no">Weak</td></tr>
+      <tr><td>8</td><td><b>No LocalBusiness or Service structured data.</b> Two of three nearby rivals have it.</td><td class="no">Weak</td></tr>
+      <tr><td>9</td><td><b>MCS register entry carries no website link.</b> We verified your certification as real and current &mdash; <b>NAP-74463, NAPIT, solar PV and battery</b> &mdash; but 69 of the 113 installers within 45 miles are clickable from the register and you are not. The register also lists <b>01284 765263</b> while your site publishes only the mobile.</td><td class="no">Fail</td></tr>
+      <tr class="you"><td>&mdash;</td><td><b>Working well:</b> enquiry routes (two forms, three tappable numbers), MCS verified, and 26 properly structured town and service pages.</td><td class="yes">Good</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Two Diagnoses That Explain The Rest</div>
+
+    <div class="flag">
+      <div class="lab">One &mdash; the form is long, but it does not qualify</div>
+      <p>Your form asks for a lot: name, address, yearly usage, internal or external, best time to call. People fill it
+      all in anyway. <b>Length is not qualification.</b> A bored night-shift worker will type an address as readily as
+      a buyer will.</p>
+      <p>What it does not ask is the thing that separates a <b>12-panel enquiry from an 80-panel one</b>: whether they
+      own the property, roof size and orientation, current bill, and when they actually want it done. Those are
+      questions a real buyer can answer in seconds and a time-waster cannot be bothered to.</p>
+      <p>That also enables <b>lead scoring</b> &mdash; rank one to four, and spend your mornings on the fours instead
+      of working the list in the order it arrived.</p>
+    </div>
+
+    <div class="flag">
+      <div class="lab">Two &mdash; the pixel is being taught to find the wrong people</div>
+      <p>Meta optimises toward whatever event you tell it is a success. At the moment that event is <b>a submitted
+      form</b>. So it has spent since January learning what a person who submits this form looks like &mdash; and
+      those people are, on your own numbers, about half time-wasters.</p>
+      <p>It is doing exactly what it was asked to. It was asked for the wrong thing. <b>That is also why doubling the
+      spend would not have fixed it</b> &mdash; it would have bought more of the same people, faster, which is what
+      happened last time when you spent double and got &ldquo;a lot more jobs that qualified, but a lot more tyre
+      kickers again as well.&rdquo;</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Arithmetic, Using Only Your Figures</div>
+    <div class="warn">
+      <div class="lab">This is arithmetic, not a forecast</div>
+      <p>Of 80 leads, <b>16 answered</b> and <b>4 bought</b>. So of the people you actually got to speak to, roughly
+      <b>one in four bought</b>.</p>
+      <p>The sixteen is the number worth moving, because the one-in-four is already respectable. <b>If the same 80
+      leads produced 32 conversations instead of 16</b>, and that one-in-four held, that is <b>8 jobs rather than
+      4</b>.</p>
+      <p>At your stated <b>&pound;2,500&ndash;&pound;3,500 profit per install</b>, four additional installs across a
+      six-week window is <b>&pound;10,000&ndash;&pound;14,000 of profit</b> from the leads you have <i>already paid
+      for</i>.</p>
+      <p><b>We are not promising that.</b> Answer rates depend on things neither of us controls. It is shown to
+      establish one point only: the ceiling on this business right now is not lead volume, and more spend is not
+      the first lever.</p>
+    </div>
+    <div class="flag">
+      <div class="lab">The ceiling nobody has mentioned to you</div>
+      <p>You said you need <b>a day to a day and a half surveying per job</b>, and that you are the one who surveys.
+      Five installs a week implies <b>five to seven and a half days of surveying inside a five-day week</b>.</p>
+      <p><b>So five a week may be a capacity problem before it is a lead problem.</b> You already identified this
+      yourself &mdash; &ldquo;probably just we need more people&rdquo; &mdash; and then said the priority was more
+      jobs. Both can be true, but if the surveying bottleneck is not addressed, additional qualified leads will
+      queue rather than convert.</p>
+      <p>Worth deciding before spend changes: does someone else survey, or do the leads get filtered hard enough that
+      you only drive to the ones worth driving to? <b>The second is cheaper and is what everything here is built
+      toward.</b></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">What You Said You Wanted</div>
+    <ul class="road road2">
+      <li><b>Five installs a week</b>, from three. Two more is the stated capacity.</li>
+      <li><b>Better leads, not cheaper ones.</b> &ldquo;You'd rather pay more money where they're answering the phone.&rdquo;</li>
+      <li><b>To double the business</b> &mdash; &pound;1.5&ndash;2m to &pound;4m.</li>
+      <li><b>To look at commercial</b> &mdash; you are already being sent commercial leads by a portal at &pound;160&ndash;&pound;300 each.</li>
+      <li><b>Not to fire anyone yet.</b> The new Corfu creative deserves its fair test first.</li>
+      <li><b>No AI receptionists.</b> Stated plainly, twice.</li>
+      <li><b>No large upfront fee.</b> See below.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">The Thing We Are Not Going To Repeat</div>
+    <div class="flag">
+      <div class="lab">TNW</div>
+      <p>Two years ago you paid <b>&pound;12,000 upfront</b> for what was sold as a complete in-house acquisition
+      system &mdash; trained callers, leads booked straight into your calendar, never pay for a lead again. You never
+      heard from them again. They moved to Dubai and traded from there. <b>You never got the money back, and you still
+      hold the contract.</b> Their setters recently rang you to pitch again.</p>
+      <p>That is the single most important piece of context from the call, and it is the reason the
+      <a href="pricing.html" style="color:var(--accent)">pricing page</a> is structured the way it is. <b>There is no
+      large upfront fee, and nothing is sold as a system you operate yourself.</b></p>
+      <p>It also explains something about your own customers that is worth using: you have personally been burned by
+      a confident pitch. <b>So have the homeowners deciding whether to spend &pound;15,000 with you.</b> That is the
+      most under-used asset in your marketing and it costs nothing to deploy.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="h">Where We Left It</div>
+    <table class="cmp">
+      <tr><th>Agreed on the call</th><th>Status</th></tr>
+      <tr><td>No pricing would be presented that day</td><td class="yes">Held</td></tr>
+      <tr><td>You rated the approach shown <b>10 out of 10</b> for confidence</td><td class="yes">Your words</td></tr>
+      <tr><td>Check back in once the new creative is live and has run</td><td>This call</td></tr>
+      <tr><td>AG1 to bring a more tailored solution</td><td class="yes"><a href="plan.html" style="color:var(--accent)">Plan of action</a> &amp; <a href="pricing.html" style="color:var(--accent)">pricing</a></td></tr>
+      <tr><td>AG1 to send results so you can judge for yourself</td><td>On the call</td></tr>
+    </table>
+    <div class="oppnote" style="margin-top:18px">
+      <b>The one question to answer before anything else:</b> the new creative went live around the week of 29
+      September. <b>What have the last ten days actually produced &mdash; how many leads, how many answered?</b>
+      If the answer rate has moved, the creative was the problem and the priority changes. If it has not, the problem
+      is downstream of the ads, which is what everything in the plan addresses.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Prepared by Andrei Givero &middot; AG1 Consulting &middot; recap of the call of 23 September 2026, written 1 October 2026.
+    <b>All business figures on this page &mdash; installs, enquiry counts, ticket sizes, margins, turnover, supplier costs and
+    the 80/16/4 outcome &mdash; are as reported by Jason Hunter on that call and have not been independently verified.</b>
+    Quoted phrases are from the call recording. Audit findings were read from hunterbuildandsolar.co.uk's own served pages
+    and published sitemaps, from Companies House, and from the MCS certified-installer register, and are reproducible.
+    Items recorded as "not found" describe what a static read of the served HTML returned and are not proof of absence.
+    <b>Installer counts and distances are straight-line calculations from registered postcodes, not drive times.</b>
+    <b>We have not identified, named or assessed any lead-generation platform, and nothing here is a statement about any
+    such platform.</b> Think Grow Media is named only because Jason named them as his supplier; nothing here assesses
+    their work beyond the figures he reported. <b>The arithmetic shown is arithmetic on reported figures, not a forecast.
+    No enquiry, answer rate, booked job or revenue outcome is forecast or promised.</b>
+  </div>
+</footer>
+</body></html>
